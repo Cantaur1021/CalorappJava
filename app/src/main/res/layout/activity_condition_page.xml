@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConditionPage">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/newstatus2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About you"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif"
+        android:text="Choose Your Diabetes Type"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/placeholder" />
+
+    <Button
+        android:id="@+id/AboutConditionNextButton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF9514"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <RadioGroup
+        android:layout_width="312dp"
+        android:layout_height="373dp"
+        app:layout_constraintBottom_toTopOf="@+id/AboutConditionNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.201"
+        android:id ="@+id/conditionRadioGroup">
+
+        <RadioButton
+            android:id="@+id/latenttyperadio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:checked = "true"
+            android:text="Latent Autoimmune"
+            android:onClick = "checkButton"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/diabetestype1radio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Diabetes Type 1"
+            android:onClick = "checkButton"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/diabetestype2radio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Diabetes Type 2"
+            android:onClick = "checkButton"
+            tools:ignore="UsingOnClickInXml"/>
+
+        <RadioButton
+            android:id="@+id/gestationalradio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Gestational"
+            android:onClick = "checkButton"
+            tools:ignore="UsingOnClickInXml"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

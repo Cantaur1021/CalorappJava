@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2023_04_10_164645" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/LoginEmailTextField"
+        android:layout_width="378dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/LoginPasswordTextField"
+        android:layout_width="378dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/LoginEmailTextField"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/LoginEmailTextField"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEmailTextField" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="272dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FF9514"
+        android:fontFamily="sans-serif-medium"
+        android:text="LOGIN"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/LoginPasswordTextField"
+        app:layout_constraintStart_toStartOf="@+id/LoginPasswordTextField"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPasswordTextField" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="314dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Don't have an account yet? Sign Up"
+        android:textColor="#3B97E7"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaloriePage">
+
+    <Button
+        android:id="@+id/calorieNextButton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF9514"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="sans-serif"
+        android:text="What is your calorie intake per day?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About you"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/newstatus7" />
+
+
+    <RadioGroup
+        android:id="@+id/caloriesRadioGroup"
+        android:layout_width="337dp"
+        android:layout_height="425dp"
+        app:layout_constraintBottom_toTopOf="@+id/calorieNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.206">
+
+        <RadioButton
+            android:id="@+id/sevenkJradio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="700-1000kJ"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/onekJradio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:onClick="checkButton"
+            android:text="1000-1300kJ"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/thirteenkJradio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:onClick="checkButton"
+            android:text="1300-1600kJ"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/idkradio"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:onClick="checkButton"
+            android:text="I dont know"
+            tools:ignore="UsingOnClickInXml" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
